@@ -20,13 +20,24 @@
     <link rel="icon" href="https://cdn.rode.com/website/rode-favicon.svg" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>RØDE Clone</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: '640px',
+            md: '768px',
+            lg: '1024px',
+            xl: '1200px',
+          },
+        },
+      };
+    </script>
   </head>
   <body style="font-family: 'Inter', sans-serif">
-    <header class="mt-3">
-      <div
-        class="container mx-auto flex items-center px-48 border-b pb-2 justify-between"
-      >
-        <div class="flex items-center gap-1">
+    <!-- Header Section -->
+    <header class="my-3">
+      <div class="flex items-center px-48 border-b pb-2 justify-between">
+        <div class="flex items-center justify-between gap-1">
           <svg
             width="13"
             height="18"
@@ -49,9 +60,11 @@
               stroke-linejoin="round"
             ></path>
           </svg>
+
           <span class="text-xs text-[#6B6B6B]">EN</span>
           <i class="fa-solid fa-caret-down fa-xs"></i>
         </div>
+
         <svg
           width="16"
           height="20"
@@ -75,10 +88,11 @@
           ></path>
         </svg>
       </div>
+      <!-- Navbar -->
       <nav
-        class="container mx-auto px-48 flex items-center justify-between pt-8 sticky top-0"
+        class="px-48 mb-6 flex items-center justify-between pt-8 sticky top-0"
       >
-        <div>
+        <div class="">
           <svg
             version="1.1"
             id="Rode_Logo"
@@ -112,7 +126,7 @@
             </g>
           </svg>
         </div>
-        <ul class="flex items-center gap-10">
+        <ul class="xl:flex items-center gap-10 hidden">
           <li class="text-sm cursor-pointer uppercase">Products</li>
           <li class="text-sm cursor-pointer uppercase">User guides</li>
           <li class="text-sm cursor-pointer uppercase">Solutions</li>
@@ -145,5 +159,31 @@
         </div>
       </nav>
     </header>
+
+    <!-- Hero Section -->
+    <main>
+      <div
+        class="bg-none lg:bg-[url('./assets/RODEX_Prelaunch-Website-Banners_1920x700_2.jpg')] bg-cover bg-no-repeat flex flex-col items-end justify-center min-h-[90vh]"
+      >
+        <div class="lg:bg-transparent bg-black py-7">
+          <div>
+            <img
+              src="./assets/RODEX_Prelaunch-Website-Banners_800x700_2.jpg"
+              alt=""
+              class="lg:hidden object-cover w-full h-auto"
+            />
+          </div>
+
+          <div class="flex flex-col items-end justify-between gap-7 lg:pr-52">
+            <img src="./assets/rode-x-text-03.svg" alt="" class="w-[540px]" />
+            <a
+              href="#"
+              class="self-center uppercase cursor-pointer rounded-full text-black bg-[#DC1414] lg:bg-black lg:text-[#DC1414] px-6 py-2 font-bold"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
