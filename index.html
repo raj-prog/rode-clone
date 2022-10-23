@@ -90,9 +90,9 @@
       </div>
       <!-- Navbar -->
       <nav
-        class="px-48 mb-6 flex items-center justify-between pt-8 sticky top-0"
+        class="px-48 mb-6 flex items-center justify-between pt-8 sticky top-0 left-0 right-0 bg-white"
       >
-        <div class="">
+        <div>
           <svg
             version="1.1"
             id="Rode_Logo"
@@ -133,7 +133,7 @@
           <li class="text-sm cursor-pointer uppercase">Apparel</li>
           <li class="text-sm cursor-pointer uppercase">Support</li>
         </ul>
-        <div>
+        <div class="">
           <svg
             data-v-bdd59cc4=""
             width="27"
@@ -163,7 +163,7 @@
     <!-- Hero Section -->
     <main>
       <div
-        class="bg-none lg:bg-[url('./assets/RODEX_Prelaunch-Website-Banners_1920x700_2.jpg')] bg-cover bg-no-repeat flex flex-col items-end justify-center min-h-[90vh]"
+        class="bg-none lg:bg-[url('./assets/RODEX_Prelaunch-Website-Banners_1920x700_2.jpg')] bg-cover bg-center bg-no-repeat flex flex-col items-end justify-center min-h-[90vh]"
       >
         <div class="lg:bg-transparent bg-black py-7">
           <div>
@@ -175,7 +175,11 @@
           </div>
 
           <div class="flex flex-col items-end justify-between gap-7 lg:pr-52">
-            <img src="./assets/rode-x-text-03.svg" alt="" class="w-[540px]" />
+            <img
+              src="./assets/rode-x-text-03.svg"
+              alt=""
+              class="w-[540px] self-center"
+            />
             <a
               href="#"
               class="self-center uppercase cursor-pointer rounded-full text-black bg-[#DC1414] lg:bg-black lg:text-[#DC1414] px-6 py-2 font-bold"
@@ -185,5 +189,38 @@
         </div>
       </div>
     </main>
+
+    <!-- Section-1 -->
+    <section>
+      <div
+        class="bg-none lg:bg-[url('./assets/rode2.jpg')] bg-cover bg-no-repeat flex flex-col bg-center items-end justify-center min-h-[90vh]"
+      >
+        <div class="lg:bg-transparent bg-black py-7">
+          <div>
+            <img
+              src="./assets/rode-res-1.jpg"
+              alt=""
+              class="lg:hidden object-cover w-full h-auto"
+            />
+          </div>
+
+          <div
+            class="flex flex-col items-end justify-between gap-7 lg:pr-52 w-[800px]"
+          >
+            <img
+              src="./assets/rode1.svg"
+              alt=""
+              class="object-cover w-[500px] self-center"
+            />
+            <h1 class="text-white self-center">The Revolution Is Here</h1>
+            <p class="text-white self-center text-center w-3/4">
+              The RØDECaster Pro II is the world's most powerful all-in-one
+              audio solution for streamers, podcasters, musicians, and creators.
+              Take your content to the next level.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
